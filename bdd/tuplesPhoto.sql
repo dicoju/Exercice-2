@@ -10,4 +10,4 @@ INSERT INTO Photo VALUES (6, 'DSC01280.jpg', 'Quelque chose de sculpté', 3);
 INSERT INTO Photo VALUES (7, 'DSC01436.jpg', 'Un monument lointain', 3);
 INSERT INTO Photo VALUES (8, 'DSC01464.jpg', 'Un monument très très loin', 3);
 INSERT INTO Photo VALUES (9, 'DSC02764.jpg', 'Un monument vu d''en bas', 3);
--- ygjh
+
