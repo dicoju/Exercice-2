@@ -12,16 +12,16 @@
 const DEBUG = true; // production : false; dev : true
 
 // Accès base de données
-const BD_HOST = '';
-const BD_DBNAME = '';
-const BD_USER = '';
-const BD_PWD = '';
+const BD_HOST = 'localhost';
+const BD_DBNAME = 'photos_td';
+const BD_USER = 'root';
+const BD_PWD = 'root';
 
 // Langue du site
 const LANG ='FR-fr';
 
 // Paramètres du site : nom de l'auteur ou des auteurs
-const AUTEUR = ''; 
+const AUTEUR = 'Julien Culieras - Hugo Lager';
 
 //dossiers racines du site
 define('PATH_CONTROLLERS','./controllers/c_');
@@ -36,10 +36,10 @@ define('PATH_TEXTES','./languages/');
 define('PATH_CSS', PATH_ASSETS.'css/');
 define('PATH_IMAGES', PATH_ASSETS.'images/');
 define('PATH_SCRIPTS', PATH_ASSETS.'scripts/');
-//define("PATH_GALERIE",'galerie/');
+define("PATH_GALERIE",'../images/');
 //define('PATH_LOG','log/');
 
 //fichiers
 //define('LOG_BDD','logbdd.txt');
-define('PATH_LOGO', PATH_IMAGES.'logo.png');
+define('PATH_LOGO', PATH_GALERIE.'logo.png');
 define('PATH_MENU', PATH_VIEWS.'menu.php');

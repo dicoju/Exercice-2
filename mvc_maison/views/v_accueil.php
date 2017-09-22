@@ -21,6 +21,15 @@
 <h1><?= TITRE_PAGE_ACCUEIL_TOUS ?></h1>
 
 
+
+<!-- Affichage des photos -->
+<?php
+
+?>
+
+
+
+
 <!--  Fin de la page -->
 
 <!--  Pied de page -->
