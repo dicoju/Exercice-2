@@ -1,12 +1,14 @@
 <?php
 
 //Appel du modèle
+
 require_once(PATH_MODELS.'PhotoDAO.php');
+
 $photoDAO = new PhotoDAO();
 
-$photo = $photoDAO->getPhotos();
+$tabPhotos[] = $photoDAO->getPhotos();
 
-if(is_null($photo))
+if(is_null($tabPhotos))
 {
     if(!is_null($photoDAO->getErreur()))
     {

@@ -6,24 +6,17 @@
  * Date: 22/09/2017
  * Time: 14:00
  */
+
+require_once(PATH_MODELS.'DAO.php');
+
 class PhotoDAO extends DAO
 {
     public function getPhotos(){
         require_once (PATH_ENTITY.'Photo.php');
-        $res = $this->queryAll('select * from photos');
+        $res = $this->queryAll('select * from photo');
 
         if ($res){
-            $arrObj = array();
-            $i = 0;
-            while ($donnees = $res->fetch()){
-                $arrObj[$i] = new Photo($donnees['photoId'],
-                                        $donnees['nomFich'],
-                                        $donnees['description'],
-                                        $donnees['catId']);
-                $i++;
-            }
-            return $arrObj;
-
+            return $res;
         }
         else return null;
     }

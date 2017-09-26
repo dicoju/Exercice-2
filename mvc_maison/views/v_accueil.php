@@ -25,6 +25,10 @@
 <!-- Affichage des photos -->
 <?php
 
+
+    foreach($tabPhotos as $cle =>$valeur){
+        echo $cle.' : '.$valeur;
+    }
 ?>
 
 
