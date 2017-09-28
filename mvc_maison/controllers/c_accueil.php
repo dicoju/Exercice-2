@@ -5,8 +5,7 @@
 require_once(PATH_MODELS.'PhotoDAO.php');
 
 $photoDAO = new PhotoDAO();
-
-$tabPhotos[] = $photoDAO->getPhotos();
+$tabPhotos = $photoDAO->getPhotos();
 
 if(is_null($tabPhotos))
 {
@@ -30,6 +29,7 @@ if(isset($erreur)) // affichage des erreurs de pas de photos
     exit();
 }
 else
-{                  // affichage des photos
+{   // affichage des photos
+
     require_once(PATH_VIEWS.$page.'.php');
 }

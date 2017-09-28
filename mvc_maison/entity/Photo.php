@@ -8,17 +8,17 @@
  */
 class Photo
 {
-    private $idPhoto;
-    private $nomFich;
-    private $description;
-    private $categorie;
+    private $_idPhoto;
+    private $_nomFich;
+    private $_description;
+    private $_categorie;
 
     function __construct($a, $b, $c, $d)
     {
-        $idPhoto = $a;
-        $nomFich = $b;
-        $description = $c;
-        $categorie = $d;
+        $this->_idPhoto = $a;
+        $this->_nomFich = $b;
+        $this->_description = $c;
+        $this->_categorie = $d;
     }
 
     /**
@@ -26,7 +26,7 @@ class Photo
      */
     public function getIdPhoto()
     {
-        return $this->idPhoto;
+        return $this->_idPhoto;
     }
 
     /**
@@ -34,7 +34,7 @@ class Photo
      */
     public function setIdPhoto($idPhoto)
     {
-        $this->idPhoto = $idPhoto;
+        $this->_idPhoto = $idPhoto;
     }
 
     /**
@@ -42,7 +42,7 @@ class Photo
      */
     public function getNomFich()
     {
-        return $this->nomFich;
+        return $this->_nomFich;
     }
 
     /**
@@ -50,7 +50,7 @@ class Photo
      */
     public function setNomFich($nomFich)
     {
-        $this->nomFich = $nomFich;
+        $this->_nomFich = $nomFich;
     }
 
     /**
@@ -58,7 +58,7 @@ class Photo
      */
     public function getDescription()
     {
-        return $this->description;
+        return $this->_description;
     }
 
     /**
@@ -66,7 +66,7 @@ class Photo
      */
     public function setDescription($description)
     {
-        $this->description = $description;
+        $this->_description = $description;
     }
 
     /**
@@ -74,7 +74,7 @@ class Photo
      */
     public function getCategorie()
     {
-        return $this->categorie;
+        return $this->_categorie;
     }
 
     /**
@@ -82,6 +82,8 @@ class Photo
      */
     public function setCategorie($categorie)
     {
-        $this->categorie = $categorie;
+        $this->_categorie = $categorie;
     }
+
+
 }

@@ -15,8 +15,16 @@ class PhotoDAO extends DAO
         require_once (PATH_ENTITY.'Photo.php');
         $res = $this->queryAll('select * from photo');
 
+        $tabPhotos = array();
         if ($res){
-            return $res;
+            for ($i = 0; $i < count($res); $i++){
+                $tabPhotos[$i] = new Photo(
+                    $res[$i]['photoId'],
+                    $res[$i]['nomFich'],
+                    $res[$i]['description'],
+                    $res[$i]['catId']);
+            }
+            return $tabPhotos;
         }
         else return null;
     }

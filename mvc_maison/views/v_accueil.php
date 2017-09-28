@@ -17,23 +17,23 @@
 <!--  Zone message d'alerte -->
 <?php require_once(PATH_VIEWS.'alert.php');?>
 
+<p class="alert alert-success"> <?php echo count($tabPhotos) . ' ';?>
+    photo(s) affichée(s) !</p>
+
 <!--  Début de la page -->
 <h1><?= TITRE_PAGE_ACCUEIL_TOUS ?></h1>
 
-
-
 <!-- Affichage des photos -->
 <?php
+foreach ($tabPhotos as $key){
+    //echo $key->getDescription();
+    ?>
+    <img src= <?php echo PATH_GALERIE . $key->getNomFich() ?>
+         alt= <?php echo $key->getDescription() ?> />
+    <?php
 
-
-    foreach($tabPhotos as $cle =>$valeur){
-        echo $cle.' : '.$valeur;
-    }
+}
 ?>
-
-
-
-
 <!--  Fin de la page -->
 
 <!--  Pied de page -->
