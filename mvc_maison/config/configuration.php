@@ -12,10 +12,10 @@
 const DEBUG = true; // production : false; dev : true
 
 // Accès base de données
-const BD_HOST = 'iutdoua-web.univ-lyon1.fr/phpMyAdmin/';
-const BD_DBNAME = 'p1602663';
-const BD_USER = 'p1602663';
-const BD_PWD = '267066';
+const BD_HOST = 'localhost';
+const BD_DBNAME = 'photos_td';
+const BD_USER = 'root';
+const BD_PWD = 'root';
 
 // Langue du site
 const LANG ='FR-fr';

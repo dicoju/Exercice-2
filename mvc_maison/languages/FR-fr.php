@@ -9,5 +9,4 @@ define('MESSAGE_ERREUR',"Une erreur s'est produite");
 
 define('TITRE', 'MES PHOTOS');
 
-define('TITRE_PAGE_ACCUEIL_TOUS','Accueil');
 

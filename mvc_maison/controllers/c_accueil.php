@@ -1,7 +1,7 @@
 <?php
 
-//Appel du modèle
 
+//Appel du modèle
 require_once(PATH_MODELS.'PhotoDAO.php');
 
 $photoDAO = new PhotoDAO();
@@ -20,7 +20,43 @@ if(is_null($tabPhotos))
 }
 
 
+require_once(PATH_MODELS.'CategorieDAO.php');
 
+$categorieDAO = new CategorieDAO();
+$tabCategories = $categorieDAO->getCategories();
+
+if(is_null($tabCategories))
+{
+    if(!is_null($categorieDAO->getErreur()))
+    {
+        $erreur = 'query';
+        if(DEBUG)
+            die($categorieDAO->getErreur());
+    }
+    else
+        $erreur = 'photo';
+}
+
+
+if (isset($_POST['btonValider'])){
+    if ($_POST['selectCategorie'] != 'allPhotos'){
+        $i = 0;
+        foreach ($tabPhotos as $key){
+            if ($key->getCategorie() != $_POST['selectCategorie']) {
+                unset($tabPhotos[$i]);
+            }
+            $i++;
+        }
+
+        foreach ($tabCategories as $key){
+            if ($key->getIdCat() == $_POST['selectCategorie']){
+                $nomCat = $key->getNomCat();
+            }
+        }
+
+    }
+
+}
 
 //Redirection ou appel de la vue
 if(isset($erreur)) // affichage des erreurs de pas de photos
@@ -29,7 +65,17 @@ if(isset($erreur)) // affichage des erreurs de pas de photos
     exit();
 }
 else
-{   // affichage des photos
+{
+    // On regarde si le nom de la categorie est définie
+    // Sinon on le met à 'toutes les photos'
+    if (!isset($nomCat)){
+        $nomCat = 'Toutes les photos';
+    }
 
+    // affichage des photos
     require_once(PATH_VIEWS.$page.'.php');
 }
+
+
+
+

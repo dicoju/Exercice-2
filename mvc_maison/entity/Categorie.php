@@ -8,13 +8,13 @@
  */
 class Categorie
 {
-    private $idCat;
-    private $nomCat;
+    private $_idCat;
+    private $_nomCat;
 
     function __construct($a, $b)
     {
-        $idCat = $a;
-        $nomCat = $b;
+        $this->_idCat = $a;
+        $this->_nomCat = $b;
     }
 
     /**
@@ -22,7 +22,7 @@ class Categorie
      */
     public function getIdCat()
     {
-        return $this->idCat;
+        return $this->_idCat;
     }
 
     /**
@@ -30,7 +30,7 @@ class Categorie
      */
     public function setIdCat($idCat)
     {
-        $this->idCat = $idCat;
+        $this->_idCat = $idCat;
     }
 
     /**
@@ -38,7 +38,7 @@ class Categorie
      */
     public function getNomCat()
     {
-        return $this->nomCat;
+        return $this->_nomCat;
     }
 
     /**
@@ -46,6 +46,6 @@ class Categorie
      */
     public function setNomCat($nomCat)
     {
-        $this->nomCat = $nomCat;
+        $this->_nomCat = $nomCat;
     }
 }
