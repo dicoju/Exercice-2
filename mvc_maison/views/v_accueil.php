@@ -52,7 +52,7 @@
 
 foreach ($tabPhotos as $key){
     ?>
-    <a href="v_footer.php">
+    <a href= <?= PATH_CONTROLLERS . 'detailPhoto.php?photo=' . $key->getIdPhoto(); ?> >
         <img src= <?php echo PATH_GALERIE . $key->getNomFich() ?>
              alt= <?php echo $key->getDescription() ?>
         />
