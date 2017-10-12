@@ -26,7 +26,24 @@ class PhotoDAO extends DAO
             }
             return $tabPhotos;
         }
-        else return null;
+        return null;
+    }
+
+    public function getPhoto($idPhoto){
+        require_once (PATH_ENTITY.'Photo.php');
+        $param = array($idPhoto);
+        $res = $this->queryRow('select * from photo where photoId = ?', $param);
+
+        if ($res){
+            $caracsPhoto = new Photo(
+                $res['photoId'],
+                $res['nomFich'],
+                $res['description'],
+                $res['catId']);
+
+            return $caracsPhoto;
+        }
+        return null;
     }
 }
 

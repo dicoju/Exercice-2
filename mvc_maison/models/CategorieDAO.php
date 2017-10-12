@@ -26,4 +26,21 @@ class CategorieDAO extends DAO
         }
         else return null;
     }
+
+    public function getCategorie($catId){
+        require_once (PATH_ENTITY.'Categorie.php');
+        $param = array($catId);
+        $res = $this->queryRow('select * from categorie WHERE catId = ?', $param);
+
+        if ($res){
+            $caracsCategorie = new Categorie(
+                $res['catId'],
+                $res['nomCat']);
+
+            return $caracsCategorie;
+        }
+
+        return null;
+
+    }
 }

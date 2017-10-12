@@ -22,8 +22,37 @@
     <h1> <?php  //$nomCat ?></h1>
 
 
+<div class="row">
+    <div class="col-lg-6">
+        <img
+            src= <?= PATH_GALERIE . $caracsPhoto->getNomFich() ?>
+            alt= <?= $caracsPhoto->getDescription() ?>
+        />
+    </div>
 
-<
+    <div class="col-lg-6">
+        <table class="table table-bordered">
+            <tr>
+                <th> Description </th>
+                <td> <?= $caracsPhoto->getDescription() ?> </td>
+            </tr>
+            <tr>
+                <th> Nom du fichier </th>
+                <td> <?= $caracsPhoto->getNomFich() ?> </td>
+            </tr>
+            <tr>
+                <th> Categorie </th>
+                <td>
+                    <a href= <?= 'index.php?page=accueil&catId=' . $caracsCategorie->getIdCat() ?> >
+                        <?= $caracsCategorie->getNomCat() ?>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
     <!--  Fin de la page -->
 
     <!--  Pied de page -->

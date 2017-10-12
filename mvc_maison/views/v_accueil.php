@@ -52,9 +52,9 @@
 
 foreach ($tabPhotos as $key){
     ?>
-    <a href= <?= PATH_CONTROLLERS . 'detailPhoto.php?photo=' . $key->getIdPhoto(); ?> >
-        <img src= <?php echo PATH_GALERIE . $key->getNomFich() ?>
-             alt= <?php echo $key->getDescription() ?>
+    <a href= <?= 'index.php?page=detailPhoto&photo=' . $key->getIdPhoto(); ?> >
+        <img src= <?= PATH_GALERIE . $key->getNomFich() ?>
+             alt= <?= $key->getDescription() ?>
         />
     </a>
     <?php

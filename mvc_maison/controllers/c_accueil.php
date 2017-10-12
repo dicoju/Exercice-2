@@ -38,22 +38,28 @@ if(is_null($tabCategories))
 }
 
 
-if (isset($_POST['btonValider'])){
-    if ($_POST['selectCategorie'] != 'allPhotos'){
+if (isset($_POST['btonValider'])  or isset($_GET['catId']) ){
+    if (isset($_POST['btonValider'])){
+        $cat = htmlspecialchars($_POST['selectCategorie']);
+    }
+    else{
+        $cat = htmlspecialchars($_GET['catId']);
+    }
+        
+    if ($cat != 'allPhotos'){
         $i = 0;
         foreach ($tabPhotos as $key){
-            if ($key->getCategorie() != $_POST['selectCategorie']) {
+            if ($key->getCategorie() != $cat) {
                 unset($tabPhotos[$i]);
             }
             $i++;
         }
 
         foreach ($tabCategories as $key){
-            if ($key->getIdCat() == $_POST['selectCategorie']){
+            if ($key->getIdCat() == $cat){
                 $nomCat = $key->getNomCat();
             }
         }
-
     }
 
 }
