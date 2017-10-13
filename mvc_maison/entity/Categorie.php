@@ -11,10 +11,15 @@ class Categorie
     private $_idCat;
     private $_nomCat;
 
-    function __construct($a, $b)
+    /**
+     * Categorie constructor.
+     * @param $idCat
+     * @param $nomCat
+     */
+    function __construct($idCat, $nomCat)
     {
-        $this->_idCat = $a;
-        $this->_nomCat = $b;
+        $this->_idCat = $idCat;
+        $this->_nomCat = $nomCat;
     }
 
     /**

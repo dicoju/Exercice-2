@@ -13,12 +13,19 @@ class Photo
     private $_description;
     private $_categorie;
 
-    function __construct($a, $b, $c, $d)
+    /**
+     * Photo constructor.
+     * @param $idPhoto
+     * @param $nomFich
+     * @param $description
+     * @param $idCategorie
+     */
+    function __construct($idPhoto, $nomFich, $description, $idCategorie)
     {
-        $this->_idPhoto = $a;
-        $this->_nomFich = $b;
-        $this->_description = $c;
-        $this->_categorie = $d;
+        $this->_idPhoto = $idPhoto;
+        $this->_nomFich = $nomFich;
+        $this->_description = $description;
+        $this->_categorie = $idCategorie;
     }
 
     /**

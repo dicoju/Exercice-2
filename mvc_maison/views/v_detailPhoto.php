@@ -19,10 +19,10 @@
 
 
     <!--  Début de la page -->
-    <h1> <?php  //$nomCat ?></h1>
-
 
 <div class="row">
+
+    <!-- Affichage de la photo -->
     <div class="col-lg-6">
         <img
             src= <?= PATH_GALERIE . $caracsPhoto->getNomFich() ?>
@@ -30,6 +30,8 @@
         />
     </div>
 
+
+    <!-- Tableau affichant les détails de la photo -->
     <div class="col-lg-6">
         <table class="table table-bordered">
             <tr>

@@ -8,8 +8,17 @@
  */
 require_once(PATH_MODELS.'DAO.php');
 
+
+/**
+ * Class CategorieDAO
+ * Classe permettant d'intéragir avec la table Catégories dans la base de données
+ */
 class CategorieDAO extends DAO
 {
+    /**
+     * @return array|null
+     * Retourne tableau de Catégories contenant toutes les catégories
+     */
     public function getCategories(){
         require_once (PATH_ENTITY.'Categorie.php');
         $res = $this->queryAll('select * from categorie');
@@ -27,6 +36,11 @@ class CategorieDAO extends DAO
         else return null;
     }
 
+    /**
+     * @param $catId
+     * @return Categorie|null
+     * Retourne un objet Catégorie par rappoort à son ID
+     */
     public function getCategorie($catId){
         require_once (PATH_ENTITY.'Categorie.php');
         $param = array($catId);
