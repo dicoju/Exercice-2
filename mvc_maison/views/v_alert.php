@@ -12,11 +12,23 @@
  * alerts: http://www.w3schools.com/bootstrap/bootstrap_alerts.asp
  */
 
-if(isset($alert))
+if(isset($_GET['erreur']))
 {
+    $erreur = htmlspecialchars($_GET['erreur']);
 ?>
-	<div class="alert alert-<?= isset($alert['classAlert']) ? $alert['classAlert'] : 'danger' ?>">
-		<strong><?= $alert['messageAlert'] ?></strong>
+
+	<div class="alert alert-danger" >
+		<strong><?= $erreur ?></strong>
 	</div>
 <?php
 }
+
+if (isset($_GET['success'])){
+    $success = htmlspecialchars($_GET['success']);
+?>
+    <div class="alert alert-success" >
+        <strong><?= $success ?></strong>
+    </div>
+<?php
+}
+

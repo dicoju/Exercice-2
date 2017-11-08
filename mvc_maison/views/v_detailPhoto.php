@@ -13,6 +13,7 @@
 //  En tête de page
 ?>
 <?php require_once(PATH_VIEWS.'header.php');?>
+<?php include(PATH_VIEWS.'menu.php'); ?>
 
     <!--  Zone message d'alerte -->
 <?php require_once(PATH_VIEWS.'alert.php');?>
@@ -25,8 +26,9 @@
     <!-- Affichage de la photo -->
     <div class="col-lg-6">
         <img
-            src= <?= PATH_GALERIE . $caracsPhoto->getNomFich() ?>
+            src= "<?= PATH_GALERIE . $caracsPhoto->getNomFich() ?>"
             alt= <?= $caracsPhoto->getDescription() ?>
+            width="350px"
         />
     </div>
 
@@ -51,8 +53,26 @@
                 </td>
             </tr>
         </table>
+
+        <?php
+        if (isset($_SESSION['userName'])){
+        ?>
+            <form method="POST">
+                <input
+                    type="submit"
+                    class="btn btn-danger"
+                    value="Supprimer cette photo"
+                    name="btonSupprPhoto"
+                    onclick="return confirm('Êtes vous sur de vouloir supprimer cette photo ?')"
+                    >
+            </form>
+        <?php
+        }
+        ?>
+
     </div>
 </div>
+
 
 
     <!--  Fin de la page -->

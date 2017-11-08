@@ -70,6 +70,41 @@ class PhotoDAO extends DAO
         }
         return null;
     }
+
+    public function getPhotoByNomFic($nomFic){
+        require_once (PATH_ENTITY.'Photo.php');
+
+        // préparation du tableau de paramètres pour la requette préparée
+        $param = array($nomFic);
+        // requete préparée
+        $res = $this->queryRow('select * from photo where nomFich = ?', $param);
+
+
+        // Si la requete est valide
+        if ($res){
+            // On crée une un objet Photo puis on le retourne
+            $caracsPhoto = new Photo(
+                $res['photoId'],
+                $res['nomFich'],
+                $res['description'],
+                $res['catId']);
+
+            return $caracsPhoto;
+        }
+        return null;
+    }
+
+    public function addPhoto($nomFic, $description, $catId){
+        $param = array($nomFic, $description, $catId);
+        $res = $this->addSupprRow('insert into photo(nomFich, description, catId) VALUES (?, ?, ?)', $param);
+        return $res;
+    }
+
+    public function deletePhoto($photoId){
+        $param = array($photoId);
+        $res = $this->addSupprRow('delete from photo WHERE photoId = ?', $param);
+        return $res;
+    }
 }
 
 

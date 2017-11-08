@@ -2,15 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="907fb42e-775a-4870-9640-97cca5937a80" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc_maison/controllers/c_404.php" afterPath="$PROJECT_DIR$/mvc_maison/controllers/c_404.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc_maison/controllers/c_adminCat.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc_maison/controllers/c_adminPhoto.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc_maison/controllers/c_login.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc_maison/controllers/c_logout.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc_maison/controllers/c_register.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc_maison/entity/User.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc_maison/models/UserDAO.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc_maison/views/v_adminCat.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc_maison/views/v_adminPhoto.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc_maison/views/v_login.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvc_maison/views/v_register.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc_maison/controllers/c_accueil.php" afterPath="$PROJECT_DIR$/mvc_maison/controllers/c_accueil.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc_maison/controllers/c_detailPhoto.php" afterPath="$PROJECT_DIR$/mvc_maison/controllers/c_detailPhoto.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc_maison/entity/Categorie.php" afterPath="$PROJECT_DIR$/mvc_maison/entity/Categorie.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc_maison/entity/Photo.php" afterPath="$PROJECT_DIR$/mvc_maison/entity/Photo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc_maison/languages/FR-fr.php" afterPath="$PROJECT_DIR$/mvc_maison/languages/FR-fr.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc_maison/models/CategorieDAO.php" afterPath="$PROJECT_DIR$/mvc_maison/models/CategorieDAO.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc_maison/models/DAO.php" afterPath="$PROJECT_DIR$/mvc_maison/models/DAO.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc_maison/models/PhotoDAO.php" afterPath="$PROJECT_DIR$/mvc_maison/models/PhotoDAO.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc_maison/views/v_accueil.php" afterPath="$PROJECT_DIR$/mvc_maison/views/v_accueil.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc_maison/views/v_alert.php" afterPath="$PROJECT_DIR$/mvc_maison/views/v_alert.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc_maison/views/v_detailPhoto.php" afterPath="$PROJECT_DIR$/mvc_maison/views/v_detailPhoto.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc_maison/views/v_header.php" afterPath="$PROJECT_DIR$/mvc_maison/views/v_header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc_maison/views/v_menu.php" afterPath="$PROJECT_DIR$/mvc_maison/views/v_menu.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,29 +39,24 @@
       <file leaf-file-name="v_accueil.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mvc_maison/views/v_accueil.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            <state relative-caret-position="496">
+              <caret line="49" column="12" lean-forward="true" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="c_404.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc_maison/controllers/c_404.php">
+      <file leaf-file-name="v_detailPhoto.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mvc_maison/views/v_detailPhoto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mvc_maison/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="334">
+              <caret line="35" column="44" lean-forward="false" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+              <folding>
+                <marker date="1510078116000" expanded="true" signature="836:958" ph="..." />
+                <marker date="1510078116000" expanded="true" signature="975:1096" ph="..." />
+                <marker date="1510078116000" expanded="true" signature="1113:1398" ph="..." />
+                <marker date="1510078116000" expanded="true" signature="1171:1380" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,16 +79,32 @@
         <option value="$PROJECT_DIR$/mvc_maison/models/categorieDAO.php" />
         <option value="$PROJECT_DIR$/mvc_maison/models/DAO_categorie.php" />
         <option value="$PROJECT_DIR$/mvc_maison/config/configuration.php" />
-        <option value="$PROJECT_DIR$/mvc_maison/languages/FR-fr.php" />
-        <option value="$PROJECT_DIR$/mvc_maison/models/PhotoDAO.php" />
-        <option value="$PROJECT_DIR$/mvc_maison/models/CategorieDAO.php" />
         <option value="$PROJECT_DIR$/mvc_maison/entity/Photo.php" />
         <option value="$PROJECT_DIR$/mvc_maison/entity/Categorie.php" />
-        <option value="$PROJECT_DIR$/mvc_maison/controllers/c_accueil.php" />
-        <option value="$PROJECT_DIR$/mvc_maison/controllers/c_detailPhoto.php" />
-        <option value="$PROJECT_DIR$/mvc_maison/views/v_detailPhoto.php" />
-        <option value="$PROJECT_DIR$/mvc_maison/views/v_accueil.php" />
         <option value="$PROJECT_DIR$/mvc_maison/controllers/c_404.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/languages/FR-fr.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/entity/User.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/models/DAO.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/models/UserDAO.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/views/v_header.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/views/v_menu_co.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/views/v_alert.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/controllers/c_accueil.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/controllers/c_register.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/controllers/c_logout.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/controllers/c_login.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/views/v_menu.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/views/v_login.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/views/v_register.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/models/CategorieDAO.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/views/v_adminCat.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/controllers/c_adminCat.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/views/v_adminPhoto.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/controllers/c_detailPhoto.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/models/PhotoDAO.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/controllers/c_adminPhoto.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/views/v_accueil.php" />
+        <option value="$PROJECT_DIR$/mvc_maison/views/v_detailPhoto.php" />
       </list>
     </option>
   </component>
@@ -92,7 +117,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1016" />
+    <option name="width" value="1005" />
     <option name="height" value="819" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -163,7 +188,57 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exercice 2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exercice 2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvc_maison" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exercice 2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exercice 2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvc_maison" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exercice 2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exercice 2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -290,17 +365,22 @@
       <workItem from="1506682557526" duration="8154000" />
       <workItem from="1507290104320" duration="5630000" />
       <workItem from="1507894719362" duration="2330000" />
+      <workItem from="1508442906633" duration="35000" />
+      <workItem from="1508501438689" duration="4127000" />
+      <workItem from="1509103289382" duration="7283000" />
+      <workItem from="1509971157506" duration="1572000" />
+      <workItem from="1510077564383" duration="605000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33640000" />
+    <option name="totallyTimeSpent" value="47262000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1016" height="819" extended-state="0" />
+    <frame x="0" y="23" width="1005" height="819" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27926078" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2689512" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -351,116 +431,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mvc_maison/models/DAO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/controllers/c_404.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/entity/Photo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/config/configuration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/models/PhotoDAO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding>
-            <element signature="e#7#89#0#PHP" expanded="true" />
-            <marker date="1507895289000" expanded="true" signature="536:555" ph="select * fro... photo" />
-            <marker date="1507895289000" expanded="true" signature="1606:1643" ph="select * fro... photo" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/controllers/c_accueil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/views/v_alert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/controllers/c_404.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/models/DAO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/entity/Photo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/config/configuration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/models/Connexion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/models/PhotoDAO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding>
-            <element signature="e#7#89#0#PHP" expanded="true" />
-            <marker date="1507895289000" expanded="true" signature="536:555" ph="select * fro... photo" />
-            <marker date="1507895289000" expanded="true" signature="1606:1643" ph="select * fro... photo" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mvc_maison/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -496,7 +466,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -504,7 +473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -520,7 +488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -552,11 +519,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
-          <folding>
-            <element signature="e#7#89#0#PHP" expanded="true" />
-            <marker date="1507895289000" expanded="true" signature="536:555" ph="select * fro... photo" />
-            <marker date="1507895289000" expanded="true" signature="1606:1643" ph="select * fro... photo" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -591,23 +553,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mvc_maison/models/DAO_categorie.php" />
     <entry file="file://$PROJECT_DIR$/mvc_maison/models/DAO_photo.php" />
-    <entry file="file://$PROJECT_DIR$/mvc_maison/views/v_header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mvc_maison/views/v_404.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/views/v_menu.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -619,39 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/views/v_alert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/languages/FR-fr.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/views/v_footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/entity/Photo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -667,69 +580,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mvc_maison/models/DAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/models/PhotoDAO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="77" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="77" />
-          <folding>
-            <element signature="e#7#89#0#PHP" expanded="true" />
-            <marker date="1507895289000" expanded="true" signature="536:555" ph="select * fro... photo" />
-            <marker date="1507895289000" expanded="true" signature="1606:1643" ph="select * fro... photo" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/models/CategorieDAO.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="41" column="56" lean-forward="false" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="56" />
-          <folding>
-            <marker date="1507895402000" expanded="true" signature="507:530" ph="select * fro... categorie" />
-            <marker date="1507895402000" expanded="true" signature="1161:1200" ph="select * fro... categorie" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/views/v_detailPhoto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/controllers/c_detailPhoto.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="14" column="60" lean-forward="false" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/controllers/c_accueil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="86" column="44" lean-forward="false" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc_maison/views/v_accueil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        <state relative-caret-position="573">
+          <caret line="71" column="1" lean-forward="true" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -737,16 +602,216 @@
     <entry file="file://$PROJECT_DIR$/mvc_maison/controllers/c_404.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/views/v_header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/views/v_logout.php" />
     <entry file="file://$PROJECT_DIR$/mvc_maison/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/views/v_menu_co.php" />
+    <entry file="file://$PROJECT_DIR$/mvc_maison/languages/FR-fr.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/controllers/c_logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="63" lean-forward="false" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/views/v_register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="100" lean-forward="true" selection-start-line="33" selection-start-column="100" selection-end-line="33" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/controllers/c_login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/controllers/c_register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="43" column="1" lean-forward="true" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/models/UserDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="46" column="5" lean-forward="true" selection-start-line="42" selection-start-column="4" selection-end-line="46" selection-end-column="5" />
+          <folding>
+            <element signature="e#7#89#0#PHP" expanded="false" />
+            <marker date="1508502698000" expanded="true" signature="414:451" ph="select * fro... user" />
+            <marker date="1508502698000" expanded="true" signature="983:1052" ph="insert into user... " />
+            <marker date="1508502698000" expanded="true" signature="1201:1234" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/models/CategorieDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+          <folding>
+            <marker date="1509104925000" expanded="true" signature="507:530" ph="select * fro... categorie" />
+            <marker date="1509104925000" expanded="true" signature="1161:1200" ph="select * fro... categorie" />
+            <marker date="1509104925000" expanded="true" signature="1533:1574" ph="insert into categorie... " />
+            <marker date="1509104925000" expanded="true" signature="1726:1763" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/views/v_menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/controllers/c_accueil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/views/v_alert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="10" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="21" selection-end-column="10" />
+          <folding>
+            <element signature="e#6#243#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/views/v_login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="21" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/views/v_footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/views/v_adminCat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-207">
+          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/controllers/c_adminPhoto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="58" column="55" lean-forward="true" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/views/v_adminPhoto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="58" lean-forward="false" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/models/PhotoDAO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="99" column="20" lean-forward="true" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="20" />
+          <folding>
+            <marker date="1510077761000" expanded="true" signature="536:555" ph="select * fro... photo" />
+            <marker date="1510077761000" expanded="true" signature="1606:1643" ph="select * fro... photo" />
+            <marker date="1510077761000" expanded="true" signature="2282:2319" ph="select * fro... photo" />
+            <marker date="1510077761000" expanded="true" signature="2846:2909" ph="insert into categorie... " />
+            <marker date="1510077761000" expanded="true" signature="3061:3096" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/entity/Photo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/controllers/c_detailPhoto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="52" column="6" lean-forward="true" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/controllers/c_adminCat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/views/v_accueil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="49" column="12" lean-forward="true" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc_maison/views/v_detailPhoto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="35" column="44" lean-forward="false" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+          <folding>
+            <marker date="1510078116000" expanded="true" signature="836:958" ph="..." />
+            <marker date="1510078116000" expanded="true" signature="975:1096" ph="..." />
+            <marker date="1510078116000" expanded="true" signature="1113:1398" ph="..." />
+            <marker date="1510078116000" expanded="true" signature="1171:1380" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

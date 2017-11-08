@@ -40,8 +40,5 @@
 				</div>
 			</section>
 		</header>
-		<!-- Menu -->
-		<?php include(PATH_VIEWS.'menu.php'); ?>
-		<!-- Vue -->
-			<section class="container">
-				<div class = "row">
+
+

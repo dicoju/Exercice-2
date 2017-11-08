@@ -57,4 +57,16 @@ class CategorieDAO extends DAO
         return null;
 
     }
+
+    public function addCategorie($catName){
+        $param = array($catName);
+        $res = $this->addSupprRow('insert into categorie (nomCat) VALUES (?)', $param);
+        return $res;
+    }
+
+    public function deleteCategorie($catId){
+        $param = array($catId);
+        $res = $this->addSupprRow('delete from categorie WHERE catId = ?', $param);
+        return $res;
+    }
 }

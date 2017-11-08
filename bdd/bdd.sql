@@ -1,5 +1,9 @@
+-- phpMyAdmin SQL Dump
+-- version 4.6.5.1
+-- https://www.phpmyadmin.net/
+--
 -- Client :  localhost:8889
--- Généré le :  Ven 22 Septembre 2017 à 13:35
+-- Généré le :  Mer 08 Novembre 2017 à 12:33
 -- Version du serveur :  5.6.34
 -- Version de PHP :  7.1.0
 
@@ -58,6 +62,28 @@ INSERT INTO `Photo` (`photoId`, `nomFich`, `description`, `catId`) VALUES
 (8, 'DSC01464.jpg', 'Un monument très très loin', 3),
 (9, 'DSC02764.jpg', 'Un monument vu d\'en bas', 3);
 
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `user`
+--
+
+CREATE TABLE `user` (
+  `userId` int(11) NOT NULL,
+  `userName` varchar(255) NOT NULL,
+  `userPassword` varchar(255) NOT NULL,
+  `userEmail` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+--
+-- Contenu de la table `user`
+--
+
+INSERT INTO `user` (`userId`, `userName`, `userPassword`, `userEmail`) VALUES
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'unEmail@tata.fr'),
+(2, 'julien', '30d69d863dde81562ce277fbc0a3cf18', 'fnjk,l'),
+(3, 'hugo', 'f1f58e8c06b2a61ce13e0c0aa9473a72', 'fdjksjkd');
+
 --
 -- Index pour les tables exportées
 --
@@ -76,6 +102,12 @@ ALTER TABLE `Photo`
   ADD KEY `fk_catId` (`catId`);
 
 --
+-- Index pour la table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`userId`);
+
+--
 -- AUTO_INCREMENT pour les tables exportées
 --
 
@@ -89,6 +121,11 @@ ALTER TABLE `Categorie`
 --
 ALTER TABLE `Photo`
   MODIFY `photoId` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+--
+-- AUTO_INCREMENT pour la table `user`
+--
+ALTER TABLE `user`
+  MODIFY `userId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- Contraintes pour les tables exportées
 --

@@ -1,5 +1,5 @@
 <?php require_once(PATH_VIEWS.'header.php');?>
-
+<?php include(PATH_VIEWS.'menu.php'); ?>
 <!--  Zone message d'alerte -->
 <?php require_once(PATH_VIEWS.'alert.php');?>
 
@@ -40,6 +40,7 @@ foreach ($tabPhotos as $key){
     <a href= <?= 'index.php?page=detailPhoto&photo=' . $key->getIdPhoto(); ?> >
         <img src= <?= PATH_GALERIE . $key->getNomFich() ?>
              alt= <?= $key->getDescription() ?>
+             width="200px"
         />
     </a>
     <?php

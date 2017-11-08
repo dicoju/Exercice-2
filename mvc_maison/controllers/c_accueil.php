@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 
 //Appel du modèle(pour les photos)
 require_once(PATH_MODELS.'PhotoDAO.php');

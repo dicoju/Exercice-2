@@ -1,4 +1,5 @@
 <?php
+session_start();
 /**
  * Created by PhpStorm.
  * User: julien
@@ -26,6 +27,11 @@ if (isset($_GET['photo'])){
     $categorieDAO = new CategorieDAO();
     $caracsCategorie = $categorieDAO->getCategorie($catId); // On récupère la catégorie pour laquelle on doit afficher les détails
 
+    if (isset($_POST['btonSupprPhoto'])){
+        $photoDAO->deletePhoto($idPhoto);
+        $success = "Photo supprimée avec succès";
+    }
+
 }
 else{
     $erreur = 'Erreur : aucune photo sélectionnée';
@@ -36,10 +42,14 @@ else{
 //Redirection ou appel de la vue
 if(isset($erreur)) // affichage des erreurs de pas de photos
 {
-    header('Location: index.php?nom='.$nom.'&message='.$erreur);
+    header('Location: index.php?page=accueil&erreur='.$erreur);
     exit();
 }
-
+elseif(isset($success)) // affichage des erreurs de pas de photos
+{
+    header('Location: index.php?page=accueil&success='.$success);
+    exit();
+}
 else {
     // rediriger vers la page
     require_once(PATH_VIEWS.$page.'.php');
